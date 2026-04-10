@@ -1,0 +1,8 @@
+[
+  {"id": "1", "peso": "12.5", "destino": "Córdoba",     "prioridad": "ESTANDAR", "contenido": "Laptop Dell Inspiron"},
+  {"id": "2", "peso": "55.0", "destino": "Rosario",     "prioridad": "ESTANDAR", "contenido": "Carne vacuna refrigerada"},
+  {"id": "3", "peso": "3.2",  "destino": "Mendoza",     "prioridad": "URGENTE",  "contenido": "Jarrón de porcelana"},
+  {"id": "4", "peso": "8.0",  "destino": "Buenos Aires","prioridad": "ESTANDAR", "contenido": "Monitor Samsung 27 pulgadas"},
+  {"id": "5", "peso": "70.0", "destino": "Tucumán",     "prioridad": "ESTANDAR", "contenido": "Harina x mayor 50 bolsas"},
+  {"id": "6", "peso": "1.5",  "destino": "La Plata",    "prioridad": "URGENTE",  "contenido": "Cristalería artesanal"}
+]
