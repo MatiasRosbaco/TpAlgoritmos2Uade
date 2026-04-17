@@ -1,8 +1,4 @@
-/**
- * TDA genérico Paquete&lt;T&gt;.
- * T representa el tipo de contenido (puede ser String, o cualquier clase).
- */
-public class Paquete<T> {
+public class Paquete<T> implements Comparable<Paquete<T>> {
 
     public enum Prioridad { URGENTE, ESTANDAR }
 
@@ -29,6 +25,22 @@ public class Paquete<T> {
 
     public boolean esPrioritario() {
         return prioridad == Prioridad.URGENTE || peso > 50;
+    }
+
+    @Override
+    public int compareTo(Paquete<T> otro) {
+        int miNivel = this.nivelPrioridad();
+        int otroNivel = otro.nivelPrioridad();
+
+        if (miNivel != otroNivel) return Integer.compare(miNivel, otroNivel);
+        return Integer.compare(this.id, otro.id);
+    }
+
+    // Menor número = mayor prioridad
+    private int nivelPrioridad() {
+        if (prioridad == Prioridad.URGENTE) return 0;
+        if (peso > 50) return 1;
+        return 2;
     }
 
     @Override
