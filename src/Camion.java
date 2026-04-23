@@ -29,7 +29,7 @@ public class Camion {
 
     private final String patente;
     private final double capacidadMaxKg;
-    private final Deque<Paquete<String>> pila;   // ArrayDeque → pila LIFO
+    private final Deque<Paquete<String>> pila;   // ArrayDeque → pila LIFO ( no se usa libreria stack porque esta obsoleta, la documentacion de java sugiere usar Deque)
     private double pesoActual;
 
     /**
